@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>7FIRESPAN – Custom Bracelet & Photo Keychain</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo" onclick="showPage('home');return false;">7<span>FIRESPAN</span></a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-menu">
+    <li><a href="#" class="nav-link" data-page="tentang">Tentang</a></li>
+    <li><a href="#" class="nav-link" data-page="produk">Produk</a></li>
+    <li><a href="#" class="nav-link" data-page="keunggulan">Keunggulan</a></li>
+    <li><a href="#" class="nav-link" data-page="harga">Harga</a></li>
+    <li><a href="#" class="nav-link" data-page="pesan">Pesan</a></li>
+  </ul>
+</nav>
+
+<!-- ══ HOME ══ -->
+<div class="page active" id="page-home">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="hero-inner hero">
+    <span class="hero-tag">✦ Handmade with Love · Pekanbaru</span>
+    <h1>Custom Bracelet &amp;<br/><em>Photo Keychain</em></h1>
+    <p class="hero-sub">Aksesoris handmade personal, aesthetic, dan penuh makna — bisa dikustom sesuai keinginan kamu. Ada QR code eksklusif di setiap produk!</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="showPage('produk')">
+        Lihat Produk ✦
+      </button>
+      <button class="btn-secondary" onclick="showPage('pesan')">
+        Pesan Sekarang
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ TENTANG ══ -->
+<div class="page" id="page-tentang">
+  <section class="sec">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <div class="about-img-box">
+
+            <!--
+            ╔══════════════════════════════════════════════╗
+            ║  FOTO TENTANG KAMI                           ║
+            ║  Taruh foto tim / logo di folder images/     ║
+            ║  lalu ganti emoji 🐱 di bawah dengan:        ║
+            ║  <img src="images/foto-tim.jpg"              ║
+            ║       alt="Tim 7FIRESPAN"                    ║
+            ║       style="width:100%;height:100%;         ║
+            ║              object-fit:cover"/>             ║
+            ╚══════════════════════════════════════════════╝
+            -->
+            
+            <img src="group.jpeg" alt="Gelang Manik Custom" style="width:100%;height:100%;object-fit:cover;object-position:center"/>
+            <div class="about-badge">
+              <strong>6</strong>Member<br/>Tim Kreatif
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-label">Tentang Kami</p>
+          <h2 class="section-title">Kami adalah <em>7FIRESPAN</em></h2>
+          <p>Bisnis handmade mahasiswa <strong>President University Pekanbaru</strong> yang lahir dari kreativitas dan semangat kebersamaan.</p>
+          <p>Setiap produk dibuat dengan tangan, penuh perhatian pada detail, dan bisa dikustom sesuai permintaanmu. QR code di kemasan bisa menyimpan pesan spesial atau quote motivasi pilihanmu!</p>
+          <div class="feature-list">
+            <div class="feature-chip"><span>🎨</span> Desain custom sesuai keinginan kamu</div>
+            <div class="feature-chip"><span>📦</span> Packaging rapi + QR code personal</div>
+            <div class="feature-chip"><span>❤️</span> Cocok untuk hadiah &amp; kenangan</div>
+            <div class="feature-chip"><span>🎓</span> Produk mahasiswa berkualitas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 <strong>7FIRESPAN</strong> · President University Pekanbaru, Riau</p>
+  </footer>
+</div>
+
+<!-- ══ PRODUK ══ -->
+<div class="page" id="page-produk">
+  <section class="sec">
+    <div class="container">
+      <div class="sec-head">
+        <p class="section-label">Koleksi Kami</p>
+        <h2 class="section-title">Produk <em>Unggulan</em></h2>
+      </div>
+      <div class="products-grid">
+
+    <!-- PRODUK 1: GELANG -->
+<div class="product-card">
+  <div class="product-img bracelet-bg">
+    <img src="gelang.png" alt="Gelang Manik Custom" style="width:100%;height:100%;object-fit:cover;object-position:center"/>
+  </div>
+  <div class="product-body">
+    <p class="product-type">Custom Bracelet</p>
+    <h3 class="product-name">Gelang Manik Custom</h3>
+    <p class="product-desc">Gelang handmade dari manik-manik premium yang bisa dikustom warna, nama, atau kata-kata motivasi. Aesthetic dan personal!</p>
+    <div class="product-footer">
+      <div class="product-price"><small>Mulai dari</small>Rp 7.000</div>
+      <a href="#" class="btn-order ig-link">Pesan ↗</a>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUK 2: KEYCHAIN -->
+<div class="product-card">
+  <div class="product-img keychain-bg">
+    <img src="ganci.jpeg" alt="Gantungan Kunci Foto" style="width:100%;height:100%;object-fit:cover;object-position:center"/>
+  </div>
+  <div class="product-body">
+    <p class="product-type">Photo Keychain</p>
+    <h3 class="product-name">Gantungan Kunci Foto</h3>
+    <p class="product-desc">Gantungan kunci akrilik bening dengan foto pilihanmu — keluarga, sahabat, pasangan, atau hewan peliharaan. Jernih &amp; tahan lama!</p>
+    <div class="product-footer">
+      <div class="product-price"><small>Mulai dari</small>Rp 15.000</div>
+      <a href="#" class="btn-order ig-link">Pesan ↗</a>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUK 3: BUCKET -->
+<div class="product-card">
+  <div class="product-img bundle-bg">
+    <img src="buket.jpeg" alt="Paket Bucket Custom" style="width:100%;height:100%;object-fit:cover;object-position:center"/>
+  </div>
+  <div class="product-body">
+    <p class="product-type">Paket Bucket Custom</p>
+    <h3 class="product-name">Satuan / Paketan</h3>
+    <p class="product-desc">Buket bunga handmade yang bisa dikustom sesuai warna &amp; tema favoritmu. Tersedia satuan maupun paketan — cocok buat hadiah wisuda, ulang tahun, atau momen spesial lainnya!</p>
+    <div class="product-footer">
+      <div class="product-price"><small>Mulai dari</small>Rp 15.000</div>
+      <a href="#" class="btn-order ig-link">Pesan ↗</a>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 <strong>7FIRESPAN</strong> · President University Pekanbaru, Riau</p>
+  </footer>
+</div>
+
+<!-- ══ KEUNGGULAN ══ -->
+<div class="page" id="page-keunggulan">
+  <section class="sec">
+    <div class="container">
+      <div class="sec-head">
+        <p class="section-label">Mengapa Pilih Kami?</p>
+        <h2 class="section-title">Keunggulan <em>7FIRESPAN</em></h2>
+      </div>
+      <div class="keunggulan-grid">
+        <div class="unggulan-card">
+          <span class="unggulan-icon">✨</span>
+          <h3 class="unggulan-title">100% Handmade</h3>
+          <p class="unggulan-desc">Setiap produk dibuat dengan tangan, satu per satu, dengan perhatian penuh pada detail dan kerapian.</p>
+        </div>
+        <div class="unggulan-card">
+          <span class="unggulan-icon">📲</span>
+          <h3 class="unggulan-title">QR Code Eksklusif</h3>
+          <p class="unggulan-desc">Di setiap kemasan ada QR code berisi pesan personal, quote, atau link spesial sesuai permintaanmu.</p>
+        </div>
+        <div class="unggulan-card">
+          <span class="unggulan-icon">🎨</span>
+          <h3 class="unggulan-title">Fully Custom</h3>
+          <p class="unggulan-desc">Pilih warna, desain, nama, foto, atau kata-kata yang kamu mau. Produknya benar-benar milikmu!</p>
+        </div>
+        <div class="unggulan-card">
+          <span class="unggulan-icon">💰</span>
+          <h3 class="unggulan-title">Harga Terjangkau</h3>
+          <p class="unggulan-desc">Mulai dari Rp 7.000, aksesoris personal yang bermakna tanpa perlu merogoh kocek dalam-dalam.</p>
+        </div>
+        <div class="unggulan-card">
+          <span class="unggulan-icon">🛡️</span>
+          <h3 class="unggulan-title">Material Premium</h3>
+          <p class="unggulan-desc">Akrilik bening anti-gores, manik berkualitas, dan tali elastis yang nyaman. Tahan lama dan tetap cantik.</p>
+        </div>
+        <div class="unggulan-card">
+          <span class="unggulan-icon">📦</span>
+          <h3 class="unggulan-title">Packaging Cantik</h3>
+          <p class="unggulan-desc">Dikemas dalam plastik OPP + kartu packaging rapi. Siap langsung diberikan sebagai hadiah!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 <strong>7FIRESPAN</strong> · President University Pekanbaru, Riau</p>
+  </footer>
+</div>
+
+<!-- ══ HARGA ══ -->
+<div class="page" id="page-harga">
+  <section class="sec">
+    <div class="container">
+      <div class="sec-head">
+        <p class="section-label">Daftar Harga</p>
+        <h2 class="section-title">Harga yang <em>Ramah di Kantong</em></h2>
+      </div>
+      <div class="harga-grid">
+
+        <div class="harga-card">
+          <p class="harga-tier">Standar</p>
+          <p class="harga-name">Gelang / Keychain</p>
+          <p class="harga-price"><sub>Rp </sub>7.000 <span style="font-size:.9rem;font-weight:300">– 15.000</span></p>
+          <p class="harga-range">per pcs</p>
+          <ul class="harga-items">
+            <li>Manik acrylic / glass</li>
+            <li>Desain standar / pilihan warna</li>
+            <li>Packaging plastik OPP</li>
+            <li>QR code packaging</li>
+          </ul>
+          <a href="#" class="btn-harga ig-link">Pesan Sekarang ↗</a>
+        </div>
+
+        <div class="harga-card featured">
+  <p class="harga-tier">Bundle</p>
+  <p class="harga-name">Paket Custom</p>
+  <p class="harga-price"><sub>Rp </sub>35.000 <span style="font-size:.9rem;font-weight:300">– 50.000</span></p>
+  <p class="harga-range">per paket</p>
+  <ul class="harga-items">
+    <li>Isi beberapa bucket sekaligus</li>
+    <li>Custom warna &amp; tema sesuai bucket</li>
+    <li>Packaging cantik siap hadiahkan</li>
+    <li>Cocok untuk souvenir &amp; acara</li>
+    <li>QR code pesan personal</li>
+  </ul>
+  <a href="#" class="btn-harga ig-link">Pesan Sekarang ↗</a>
+</div>
+
+        <div class="harga-card">
+  <p class="harga-tier">Standar</p>
+  <p class="harga-name">Bucket Satuan</p>
+  <p class="harga-price"><sub>Rp </sub>15.000 <span style="font-size:.9rem;font-weight:300">– 20.000</span></p>
+  <p class="harga-range">Satuan</p>
+  <ul class="harga-items">
+    <li>Buket bunga handmade 1 pcs</li>
+    <li>Custom warna &amp; tema bunga</li>
+    <li>Cocok untuk hadiah &amp; souvenir</li>
+    <li>Packaging rapi + pita cantik</li>
+  </ul>
+  <a href="#" class="btn-harga ig-link">Pesan Sekarang ↗</a>
+</div>
+
+      </div>
+    </div>
+  </section>
+  <footer style="background:rgba(92,51,64,.7);">
+    <p>© 2025 <strong>7FIRESPAN</strong> · President University Pekanbaru, Riau</p>
+  </footer>
+</div>
+
+<!-- ══ PESAN ══ -->
+<div class="page" id="page-pesan">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="pesan-inner">
+    <p class="section-label" style="color:var(--rose);">Mau Order?</p>
+    <h2 class="section-title">DM Kami di <em>Instagram</em>!</h2>
+    <p>Ceritakan desain yang kamu mau — warna, foto, nama, atau kata spesialmu. Kami siap wujudkan aksesoris impianmu! 🐱</p>
+
+    <div class="pesan-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text"><strong>Pilih produk &amp; tipe</strong>Basic, Premium, atau Bundle — sesuaikan sama budget kamu.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text"><strong>DM Instagram kami</strong>Kirim foto, nama, atau desain yang kamu mau lewat DM.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text"><strong>Konfirmasi &amp; produksi</strong>Kami konfirmasi pesanan dan mulai buat produkmu dengan penuh cinta ❤️</div>
+      </div>
+    </div>
+
+    <a href="#" class="btn-ig ig-link" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      DM 7FIRESPAN di Instagram
+    </a>
+  </div>
+  <footer style="position:absolute;bottom:0;left:0;right:0;background:transparent;border-top:1px solid rgba(92,51,64,.15);">
+    <p>© 2025 <strong style="color:var(--mauve)">7FIRESPAN</strong> · Made with ❤️ by Intan, Isnaini, Permata, Rani, Rianita, Theresia &amp; Yulia</p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
